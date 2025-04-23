@@ -95,14 +95,14 @@ export default function Home() {
             {/* Video Column */}
             <div className="lg:col-span-3 bg-gray-900 rounded-2xl overflow-hidden shadow-2xl border border-gray-800 transform transition-all hover:scale-102 hover:shadow-blue-900/20 hover:shadow-xl">
               <div className="aspect-video w-full">
-                <video
-                  controls
-                  poster={projectInfo.demoThumbnail}
-                  className="w-full h-full object-cover"
-                >
-                  <source src={projectInfo.demoVideo} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/a59QF-VkZMc"
+                  title="Project Demo"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               </div>
             </div>
 

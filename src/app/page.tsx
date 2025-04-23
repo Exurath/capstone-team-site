@@ -68,10 +68,17 @@ const projectInfo = {
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-850 to-gray-800 text-white">
-      {/* Hero Section - Fixed for mobile */}
+      {/* Hero Section - Fixed for mobile with Safari-compatible gradient text */}
       <section id="hero" className="w-full bg-gradient-to-r from-gray-950 to-gray-900 py-16 sm:py-24 px-4 sm:px-6 flex flex-col items-center overflow-hidden relative">
         <div className="container mx-auto text-center z-10">
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 sm:mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-purple-600">
+          <h1 
+            className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 sm:mb-8 text-center text-transparent"
+            style={{
+              backgroundImage: "linear-gradient(to right, #60a5fa, #c084fc, #9333ea)",
+              WebkitBackgroundClip: "text",
+              backgroundClip: "text"
+            }}
+          >
             Meet Our Capstone Team
           </h1>
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto text-center mb-8 sm:mb-10 px-2">
@@ -87,18 +94,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Project Demo Section */}
+      {/* Project Demo Section with Safari-compatible gradient text */}
       <section id="project" className="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-b from-gray-900 to-gray-950">
         <div className="container mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-10 sm:mb-16 text-center">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">
+            <span 
+              className="text-transparent"
+              style={{
+                backgroundImage: "linear-gradient(to right, #4ade80, #3b82f6)",
+                WebkitBackgroundClip: "text",
+                backgroundClip: "text"
+              }}
+            >
               Project Showcase
             </span>
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 sm:gap-12">
             {/* Video Column */}
-            <div className="lg:col-span-3 bg-gray-900 rounded-2xl overflow-hidden shadow-2xl border border-gray-800 transform transition-all hover:scale-102 hover:shadow-blue-900/20 hover:shadow-xl">
+            <div className="lg:col-span-3 bg-gray-900 rounded-2xl overflow-hidden shadow-2xl border border-gray-800 transform transition-all hover:shadow-blue-900/20 hover:shadow-xl">
               <div className="aspect-video w-full">
                 <iframe
                   className="w-full h-full"
@@ -114,7 +128,14 @@ export default function Home() {
             {/* Project Info Column */}
             <div className="lg:col-span-2 flex flex-col justify-center">
               <div className="p-4 sm:p-6 bg-gray-800/50 rounded-2xl border border-gray-700/50 backdrop-blur-sm shadow-lg">
-                <h3 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 text-blue-300">
+                <h3 
+                  className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 text-transparent"
+                  style={{
+                    backgroundImage: "linear-gradient(to right, #93c5fd, #60a5fa)",
+                    WebkitBackgroundClip: "text",
+                    backgroundClip: "text"
+                  }}
+                >
                   {projectInfo.title}
                 </h3>
                 <p className="text-gray-300 mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base">
@@ -122,7 +143,14 @@ export default function Home() {
                 </p>
 
                 <div className="mb-4 sm:mb-6">
-                  <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-blue-400 flex items-center">
+                  <h4 
+                    className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 flex items-center text-transparent"
+                    style={{
+                      backgroundImage: "linear-gradient(to right, #93c5fd, #60a5fa)",
+                      WebkitBackgroundClip: "text",
+                      backgroundClip: "text"
+                    }}
+                  >
                     <span className="inline-block w-3 h-3 bg-blue-400 rounded-full mr-2"></span>
                     Technologies Used
                   </h4>
@@ -145,7 +173,16 @@ export default function Home() {
 
       {/* Team Members Grid */}
       <section id="team" className="container mx-auto px-4 sm:px-6 py-16 sm:py-24">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4 text-center">The Team</h2>
+        <h2 
+          className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4 text-center text-transparent"
+          style={{
+            backgroundImage: "linear-gradient(to right, #e879f9, #d946ef)",
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text"
+          }}
+        >
+          The Team
+        </h2>
         <p className="text-center text-gray-400 mb-10 sm:mb-16 max-w-2xl mx-auto text-sm sm:text-base px-2">
           Meet the talented developers behind DocVerify, bringing together
           diverse skills and expertise.
@@ -170,7 +207,16 @@ export default function Home() {
 
               <div className="p-4 sm:p-6">
                 <h2 className="text-xl sm:text-2xl font-bold mb-1">{member.name}</h2>
-                <p className="text-blue-400 font-medium mb-3 sm:mb-4">{member.role}</p>
+                <p 
+                  className="font-medium mb-3 sm:mb-4 text-transparent"
+                  style={{
+                    backgroundImage: "linear-gradient(to right, #60a5fa, #3b82f6)",
+                    WebkitBackgroundClip: "text",
+                    backgroundClip: "text"
+                  }}
+                >
+                  {member.role}
+                </p>
                 <p className="text-gray-300 text-xs sm:text-sm mb-6 sm:mb-8 leading-relaxed">
                   {member.bio}
                 </p>

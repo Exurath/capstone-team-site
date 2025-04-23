@@ -76,8 +76,8 @@ export default function Home() {
           Meet Our Capstone Team
         </h1>
         <p className="text-xl text-gray-300 max-w-3xl text-center mb-10">
-          We&apos;re a group of passionate developers and designers working
-          together to create innovative solutions for real-world problems.
+          We are a group of passionate developers and designers working together
+          to create innovative solutions for real-world problems.
         </p>
         <div className="w-24 h-2 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full mt-4"></div>
       </div>

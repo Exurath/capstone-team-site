@@ -1,7 +1,3 @@
-Here’s a clean and professional `README.md` for your capstone project repository:
-
----
-
 # DocVerify
 
 **DocVerify** is a web-based application designed to assist mortgage brokers in pre-screening financial documents more efficiently. The project was developed as a capstone project by a team of Software Development students from SAIT, showcasing our skills in full-stack development, UI/UX design, cloud integration, and AI-driven validation.

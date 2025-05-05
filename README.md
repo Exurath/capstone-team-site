@@ -59,4 +59,3 @@ If you have any questions or want to learn more about the project, feel free to 
 
 > Built with 💻 and ☁️ by a passionate team of developers.
 
----
